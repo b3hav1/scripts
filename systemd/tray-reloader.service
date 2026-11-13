@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic tray reload
+
+[Service]
+Restart=on-failure
+ExecStart=%h/Scripts/tray-reloader.sh
+
+[Install]
+WantedBy=graphical-session.target
