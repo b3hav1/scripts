@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic chmod +x
+
+[Service]
+Restart=on-failure
+ExecStart=%h/Scripts/auto-chmod.sh
+
+[Install]
+WantedBy=default.target
