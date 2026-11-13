@@ -16,7 +16,8 @@ for dir in "${WATCH_DIRS[@]}"; do
     echo "[INFO] Starting watch $dir"
 done
 
-inotifywait -mrqe close_write,moved_to --format '%w%f' "${WATCH_DIRS[@]}" | while read -r filepath
+inotifywait -mrqe close_write,moved_to --format '%w%f' "${WATCH_DIRS[@]}" |
+while read -r filepath;
 do
     filetype=$(file --mime-type -b "$filepath")
 

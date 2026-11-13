@@ -21,7 +21,8 @@ for src in "${!WATCH_DIRS[@]}"; do
     echo "[INFO] Starting watch $src"
 done
 
-inotifywait -mqe close_write,moved_to --format '%w %f' "${!WATCH_DIRS[@]}" | while read -r watch_dir filename
+inotifywait -mqe close_write,moved_to --format '%w %f' "${!WATCH_DIRS[@]}" |
+while read -r watch_dir filename;
 do
     src="${watch_dir%/}"
     dest="${WATCH_DIRS[$src]}"
