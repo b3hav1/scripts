@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic symlink
+
+[Service]
+Restart=on-failure
+ExecStart=%h/Scripts/auto-symlink.sh
+
+[Install]
+WantedBy=default.target
