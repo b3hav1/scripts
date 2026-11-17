@@ -3,7 +3,7 @@
 WATCH_DIRS=("$HOME/Scripts")
 
 if ! command -v inotifywait &>/dev/null; then
-    echo "[FATAL] inotify-tools is not installed"
+    echo "[ERROR] inotify-tools is not installed"
     exit 1
 fi
 

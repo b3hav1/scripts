@@ -3,12 +3,12 @@
 EXT_ID="appindicatorsupport@rgcjonas.gmail.com"
 
 if ! command -v gnome-extensions &>/dev/null; then
-    echo "[FATAL] Running unsupported environment"
+    echo "[ERROR] Running unsupported environment"
     exit 1
 fi
 
 if ! gnome-extensions info "$EXT_ID" &>/dev/null; then
-    echo "[FATAL] Extension $EXT_ID is not installed"
+    echo "[ERROR] Extension $EXT_ID is not installed"
     exit 1
 fi
 
