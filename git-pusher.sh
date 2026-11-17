@@ -14,19 +14,19 @@ EOF
 fi
 
 if ! command -v git &>/dev/null; then
-    echo "[ERROR] git is not installed"
+    echo "Error: git is not installed"
     exit 1
 fi
 
 if ! git rev-parse --is-inside-work-tree &>/dev/null; then
-    echo "[ERROR] Not a Git repository"
+    echo "Error: Not a Git repository"
     exit 1
 fi
 
 git add -A
 
 if git diff --cached --quiet; then
-    echo "[INFO] Nothing to commit"
+    echo "Nothing to commit"
     exit 0
 fi
 
