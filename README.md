@@ -49,6 +49,13 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
       <td>All symlinks filetypes</td>
       <td>Symlinks to environment CLI commands.</td>
     </tr>
+    <tr>
+      <td colspan="2"><strong><code>nautilus/</code></strong></td>
+    </tr>
+    <tr>
+      <td>7z-extractor.sh</td>
+      <td>Context menu extract archives using 7z.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -57,6 +64,7 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
 First of all, you need a modern `systemd`-based Linux distro (I'm running **CachyOS**).
 
 * `inotify-tools` - filesystem watchers (`auto-chmod.sh`, `auto-symlink.sh`).
+* `7zip` *(optional)* - versatile utility for extracting archives (`7z-extractor.sh`).
 * **GNOME** *(optional)* - only for desktop-specific scripts (`tray-reloader.sh`).
 * **AppIndicator** extension *(optional)* - specifically for `tray-reloader.sh`.
 
