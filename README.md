@@ -25,6 +25,10 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
       <td>Reloads <b>AppIndicator</b> at screen unlock.</td>
     </tr>
     <tr>
+      <td><code>git-pusher.sh</code></td>
+      <td>Automates basic <code>git</code> work operations.</td>
+    </tr>
+    <tr>
       <td colspan="2"><strong><code>python/</code></strong></td>
     </tr>
     <tr>
@@ -37,6 +41,13 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
     <tr>
       <td><code>.service</code> extension</td>
       <td>Background units for automation scripts.</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong><code>symlinks/</code></strong></td>
+    </tr>
+    <tr>
+      <td>All symlinks filetypes</td>
+      <td>Symlinks to environment CLI commands.</td>
     </tr>
   </tbody>
 </table>
@@ -59,6 +70,9 @@ git clone https://github.com/b3hav1/scripts.git ~/Scripts
 
 # Make scripts executable
 chmod +x ~/Scripts/*.sh
+
+# Add symlinks dir to PATH (add in your ~/.*rc)
+export PATH="$HOME/Scripts/symlinks:$PATH"
 
 # Link systemd user units
 mkdir -p ~/.config/systemd/user
