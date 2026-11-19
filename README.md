@@ -36,6 +36,10 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
       <td>Utility for patching fonts (includes assets).</td>
     </tr>
     <tr>
+      <td><code>json-merger.py</code></td>
+      <td>Utility for merging flat JSON dictionaries.</td>
+    </tr>
+    <tr>
       <td colspan="2"><strong><code>systemd/</code></strong></td>
     </tr>
     <tr>
@@ -53,8 +57,8 @@ Personal collection of shell scripts, utilities, and `systemd` user units for au
       <td colspan="2"><strong><code>nautilus/</code></strong></td>
     </tr>
     <tr>
-      <td>7z-extractor.sh</td>
-      <td>Context menu extract archives using 7z.</td>
+      <td><code>7z-extractor.sh</code></td>
+      <td>Context menu: extract archives using 7z.</td>
     </tr>
   </tbody>
 </table>
